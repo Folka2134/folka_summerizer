@@ -12,17 +12,17 @@ const Hero = () => {
         <button
           type="button"
           onClick={() => window.open("https://github.com/folka2134")}
-          className="black_btn"
+          className="rounded-full border border-black bg-black px-5 py-1.5 text-sm text-white transition-all hover:bg-white hover:text-black"
         >
           GitHub
         </button>
       </nav>
 
-      <h1 className="head_text">
+      <h1 className="mt-5 text-center text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl">
         Summarise Articles with <br className="max-md:hidden" />
         <span className="blue_gradient">OpenAI GPT-4</span>
       </h1>
-      <h2 className="desc">
+      <h2 className="mt-5 max-w-2xl text-center text-lg text-gray-600 sm:text-xl">
         Simplify your reading with summize and open-source article summarizer
         that transforms lengthly articles into clear and concise summaries
       </h2>

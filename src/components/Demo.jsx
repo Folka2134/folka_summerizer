@@ -69,12 +69,12 @@ const Demo = () => {
             value={article.url}
             onChange={(e) => setArticle({ ...article, url: e.target.value })}
             required
-            className="url_input peer"
+            className="peer block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-10 pr-12 font-satoshi text-sm font-medium shadow-lg focus:border-black focus:outline-none focus:ring-0"
           />
 
           <button
             type="submit"
-            className="submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700"
+            className="absolute inset-y-0 right-0 my-1.5 mr-1.5 flex w-10 items-center justify-center rounded border border-gray-200 font-sans text-sm font-medium text-gray-400 hover:border-gray-700 hover:text-gray-700 peer-focus:border-gray-700 peer-focus:text-gray-700"
           >
             ↵
           </button>
@@ -86,9 +86,12 @@ const Demo = () => {
             <div
               key={`link-${index}`}
               onClick={() => setArticle(article)}
-              className="link_card"
+              className="flex cursor-pointer flex-row items-center justify-start gap-3 rounded-lg border border-gray-200 bg-white p-3"
             >
-              <div className="copy_btn" onClick={() => handleCopy(article.url)}>
+              <div
+                className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur"
+                onClick={() => handleCopy(article.url)}
+              >
                 <img
                   src={copySavedUrl === article.url ? tick : copy}
                   alt="copyIcon"
@@ -125,7 +128,7 @@ const Demo = () => {
               <h2 className="font-satoshi text-xl font-bold text-gray-600">
                 Article <span className="blue_gradient">Summary</span>
               </h2>
-              <div className="summary_box">
+              <div className="rounded-xl border border-gray-200 bg-white/20 p-4 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur">
                 <p className="font-inter text-sm font-medium text-gray-700">
                   {article.summary}
                 </p>

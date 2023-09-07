@@ -9,7 +9,7 @@ const App = () => {
       <div className="">
         <div className="gradient" />
       </div>
-      <div className="app">
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center justify-center px-6 sm:px-16">
         <Hero />
         <Demo />
       </div>
