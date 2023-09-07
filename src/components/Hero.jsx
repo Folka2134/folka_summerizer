@@ -19,12 +19,10 @@ const Hero = () => {
       </nav>
 
       <h1 className="mt-5 text-center text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl">
-        Summarise Articles with <br className="max-md:hidden" />
-        <span className="blue_gradient">OpenAI GPT-4</span>
+        Summarise <span className="blue_gradient">Articles</span>
       </h1>
       <h2 className="mt-5 max-w-2xl text-center text-lg text-gray-600 sm:text-xl">
-        Simplify your reading with summize and open-source article summarizer
-        that transforms lengthly articles into clear and concise summaries
+        Transforms your lengthly articles into clear and concise summaries
       </h2>
     </header>
   );
